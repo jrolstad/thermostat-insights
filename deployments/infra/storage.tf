@@ -16,10 +16,6 @@ resource "aws_s3_bucket" "athena_resources" {
   bucket = local.athena_bucket_name
 }
 
-resource "aws_s3_bucket_acl" "athena_resources" {
-  bucket = aws_s3_bucket.athena_resources.id
-  acl    = "private"
-}
 
 resource "aws_s3_bucket_public_access_block" "athena_resources" {
   bucket = aws_s3_bucket.athena_resources.id
