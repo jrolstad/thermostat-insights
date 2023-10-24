@@ -3,11 +3,6 @@ resource "aws_s3_bucket" "observation_data" {
 
 }
 
-resource "aws_s3_bucket_acl" "observation_data" {
-  bucket = aws_s3_bucket.observation_data.id
-  acl    = "private"
-}
-
 resource "aws_s3_bucket_public_access_block" "observation_data" {
   bucket = aws_s3_bucket.observation_data.id
 
