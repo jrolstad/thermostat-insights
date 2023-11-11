@@ -4,8 +4,6 @@ The components in Thermostat Insights enable the collection and storage of large
 # Requirements
 * Terraform 1.6 or higher
 
-# Components
-
 # Infrastructure
 The infrastructure used to implement this solution is defined with Terraform HCL.  See the [deployments/infra](deployments/infra/) directory for more details.
 
